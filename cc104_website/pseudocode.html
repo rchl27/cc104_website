@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudocode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+<nav>
+    <h1><i class="bi bi-terminal"></i> Pseudocode</h1>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="pseudocode.html">Pseudocode</a>
+        <a href="cpp.html">C++ Codes</a>
+    </div>
+</nav>
+
+<div class="container">
+     <h2 class="section-title animate-slide">Pseudocode Collection</h2>
+
+    <div class="grid">
+
+        <!-- 1 -->
+        <div class="card animate-up">
+            <h3>1. Linear Search</h3>
+            <pre>
+Start
+Input array A and target T
+For i = 0 to length(A)-1
+    If A[i] == T
+        Output i
+        Stop
+EndFor
+Output "Not Found"
+End
+            </pre>
+        </div>
+
+        <!-- 2 -->
+        <div class="card animate-up">
+            <h3>2. Binary Search</h3>
+            <pre>
+Start
+Set low = 0, high = n-1
+While low ≤ high
+    mid = (low+high)/2
+    If A[mid] == T
+        Output mid
+        Stop
+    Else if A[mid] < T
+        low = mid + 1
+    Else
+        high = mid - 1
+EndWhile
+Output "Not Found"
+End
+            </pre>
+        </div>
+
+        <!-- 3 -->
+        <div class="card animate-up">
+            <h3>3. Bubble Sort</h3>
+            <pre>
+Start
+Repeat
+    swapped = false
+    For i = 0 to n-2
+        If A[i] > A[i+1]
+            Swap
+            swapped = true
+    EndFor
+Until swapped = false
+End
+            </pre>
+        </div>
+
+        <!-- 4 -->
+        <div class="card animate-up">
+            <h3>4. Selection Sort</h3>
+            <pre>
+Start
+For i = 0 to n-2
+    min = i
+    For j = i+1 to n-1
+        If A[j] < A[min]
+            min = j
+    EndFor
+    Swap A[i], A[min]
+EndFor
+End
+            </pre>
+        </div>
+
+        <!-- 5 -->
+        <div class="card animate-up">
+            <h3>5. Insertion Sort</h3>
+            <pre>
+Start
+For i = 1 to n-1
+    key = A[i]
+    j = i - 1
+    While j ≥ 0 AND A[j] > key
+        A[j+1] = A[j]
+        j = j - 1
+    EndWhile
+    A[j+1] = key
+EndFor
+End
+            </pre>
+        </div>
+
+        <!-- 6 -->
+        <div class="card animate-up">
+            <h3>6. Fibonacci</h3>
+            <pre>
+Function Fibo(n)
+    If n ≤ 1 return n
+    Return Fibo(n-1) + Fibo(n-2)
+EndFunction
+            </pre>
+        </div>
+
+        <!-- 7 -->
+        <div class="card animate-up">
+            <h3>7. Factorial</h3>
+            <pre>
+Function Fact(n)
+    If n == 0 return 1
+    Return n * Fact(n-1)
+EndFunction
+            </pre>
+        </div>
+
+        <!-- 8 -->
+        <div class="card animate-up">
+            <h3>8. Find Maximum</h3>
+            <pre>
+max = A[0]
+For i = 1 to n-1
+    If A[i] > max
+        max = A[i]
+EndFor
+Output max
+            </pre>
+        </div>
+
+        <!-- 9 -->
+        <div class="card animate-up">
+            <h3>9. Find Minimum</h3>
+            <pre>
+min = A[0]
+For i = 1 to n-1
+    If A[i] < min
+        min = A[i]
+EndFor
+Output min
+            </pre>
+        </div>
+
+        <!-- 10 -->
+        <div class="card animate-up">
+            <h3>10. Sum of Array</h3>
+            <pre>
+sum = 0
+For i = 0 to n-1
+    sum = sum + A[i]
+EndFor
+Output sum
+            </pre>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
